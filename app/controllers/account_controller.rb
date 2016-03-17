@@ -6,6 +6,7 @@ class AccountController < ApplicationController
     case @request.method
       when :post
 p "hi add a new file"
+p "new line for issue 3"
         if @session['user'] = User.authenticate(@params['user_login'], @params['user_password'])
          @result=User.login_type(@params['user_login'],@params['user_password'])
 
